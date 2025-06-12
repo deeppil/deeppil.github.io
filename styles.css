@@ -1,1 +1,33 @@
+.blog-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  background: none;
+}
 
+.blog-table th, .blog-table td {
+  padding: 16px 24px;
+  text-align: left;
+  border: none;
+  background: #23272f;
+  color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #0002;
+}
+
+.blog-table th {
+  background: #191c22;
+  color: #7cb6ff;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.blog-table a {
+  color: #7cb6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-table a:hover {
+  text-decoration: underline;
+}
