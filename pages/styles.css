@@ -4,7 +4,7 @@
   color: inherit;    
   color: rgb(61, 61, 255);
   transition: text-decoration 0.1s;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .link:hover , :focus {
@@ -20,13 +20,38 @@
 }
 
 .blog-container {
-    width: 60%;
-    border-collapse: collapse;
-    text-align: center;
-    margin: 40px auto;
-    overflow: hidden;
-    box-shadow: 0 4px 24px #0002;
-    border-radius: 12px;
+  max-width: 950px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 24px #0002;
+}
+
+@media (max-width: 700px) {
+  .blog-container {
+    max-width: 95vw;
+    width: 98vw;
+    padding: 0 8px;
+    margin: 12px auto;
+    border-radius: 8px;
+  }
+  body, p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+    word-break: break-word;
+  }
+  .blog-text, .blog-list {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1rem;      /* optional: make text smaller on mobile */
+    padding: 0 2px;       /* optional: a touch of side padding */
+  }
 }
 
 .blog-title {
@@ -59,6 +84,8 @@
   color: #555;
   font-size: 18px;
 }
+
+
 
 
 /*
